@@ -1,0 +1,85 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #a685e2, #d1c4e9);
+}
+
+.profile-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+    transform: scale(1.03);
+   background: linear-gradient(to right, #d3d3d3, silver, white);
+
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-card h2, .profile-card p {
+    margin: 10px 0;
+    padding: 2px 5px;
+}
+
+.social-links{
+    width: 100%;
+}
+
+.social-links  a{
+   margin: 0 10px;
+    padding: 10px 15px;
+    color: #0073b1;
+   
+
+}
+.email-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    white-space: nowrap; 
+}
+
+.email-text {
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    max-width: 90%;
+}
+
+
+@media (max-width: 600px) {
+    .profile-card {
+        width: 80%;
+        padding: 12px;
+    }
+    .profile-card img {
+        width: 80px;
+        height: 80px;
+    }
+    .email-text {
+        font-size: 14px;
+    }
+    }
+}
