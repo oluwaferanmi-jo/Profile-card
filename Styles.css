@@ -27,6 +27,7 @@ body {
 
 .profile-card:hover {
     transform: scale(1.03);
+    max-height: 90vh;
    background: linear-gradient(to right, #d3d3d3, silver, white);
 
 }
@@ -60,12 +61,15 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     white-space: nowrap; 
+
 }
 
 .email-text {
     overflow: hidden;
     text-overflow: ellipsis; 
     max-width: 90%;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -82,4 +86,3 @@ body {
         font-size: 14px;
     }
     }
-}
